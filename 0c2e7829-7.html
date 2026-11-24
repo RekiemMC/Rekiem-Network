@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Transcript #7 • Rekiem Network</title>
+  <link rel="icon" href="https://rekiemmc.github.io/Rekiem-Network/assets/rekiem_logo.png"/>
+  <style>
+    :root { --bg:#0b111a; --surface:#111827; --card:#172133; --border:#24324a; --text:#e6eef8; --muted:#94a3b8; --accent:#00e5d1; }
+    * { box-sizing:border-box; margin:0; padding:0; }
+    body { font-family:'Segoe UI',system-ui,sans-serif; background:var(--bg); color:var(--text); line-height:1.5; }
+    .topbar { background:var(--surface); border-bottom:1px solid var(--border); padding:18px 24px; position:sticky; top:0; z-index:10; }
+    .top-inner { max-width:960px; margin:0 auto; display:flex; align-items:center; justify-content:space-between; gap:16px; flex-wrap:wrap; }
+    .brand { display:flex; align-items:center; gap:14px; }
+    .brand-logo { width:48px; height:48px; border-radius:12px; border:2px solid var(--accent); object-fit:cover; }
+    .brand h1 { font-size:1.18rem; color:var(--text); }
+    .brand p { font-size:0.84rem; color:var(--accent); font-weight:600; }
+    .search-box { background:var(--card); color:var(--text); border:1px solid var(--border); border-radius:10px; padding:9px 14px; min-width:220px; font-size:0.9rem; }
+    .meta-bar { max-width:960px; margin:18px auto 0; padding:0 24px; display:grid; grid-template-columns:repeat(auto-fit,minmax(170px,1fr)); gap:10px; }
+    .meta-pill { background:var(--surface); border:1px solid var(--border); border-radius:10px; padding:10px 14px; font-size:0.82rem; color:var(--muted); }
+    .meta-pill b { display:block; color:var(--text); font-size:0.92rem; margin-top:2px; }
+    .chat { max-width:960px; margin:18px auto 48px; padding:0 24px; display:flex; flex-direction:column; gap:10px; }
+    .msg-row { display:flex; gap:14px; padding:12px 16px; background:var(--surface); border:1px solid var(--border); border-radius:12px; }
+    .avatar { width:42px; height:42px; border-radius:50%; flex-shrink:0; object-fit:cover; }
+    .msg-body { flex:1; min-width:0; }
+    .msg-meta { display:flex; align-items:center; gap:8px; flex-wrap:wrap; margin-bottom:4px; }
+    .author { font-weight:700; font-size:0.95rem; }
+    .badge-bot { background:#5865f2; color:#fff; font-size:0.68rem; font-weight:700; padding:1px 6px; border-radius:4px; }
+    .ts { color:var(--muted); font-size:0.78rem; }
+    .msg-text { word-wrap:break-word; font-size:0.93rem; }
+    .msg-text a { color:var(--accent); }
+    code { background:#0a0f18; padding:2px 6px; border-radius:5px; font-size:0.86em; color:var(--accent); }
+    .mention { background:rgba(88,101,242,0.22); color:#c9d1ff; padding:1px 5px; border-radius:4px; font-weight:600; }
+    .dc-emoji { width:1.35em; height:1.35em; vertical-align:-0.28em; object-fit:contain; display:inline-block; }
+    .dc-embed { margin-top:8px; background:var(--card); border-left:4px solid var(--accent); border-radius:8px; padding:12px 14px; max-width:560px; }
+    .emb-title { font-weight:700; margin-bottom:6px; font-size:0.95rem; }
+    .emb-desc { font-size:0.88rem; color:#dbe5f2; }
+    .emb-field { margin-top:8px; }
+    .emb-fn { font-weight:700; font-size:0.85rem; }
+    .emb-fv { font-size:0.86rem; color:#cbd5e1; }
+    .emb-footer { margin-top:10px; font-size:0.75rem; color:var(--muted); }
+    .att-wrap { margin-top:8px; display:flex; flex-wrap:wrap; gap:10px; }
+    .att-img { max-width:420px; max-height:360px; border-radius:10px; border:1px solid var(--border); display:block; }
+    .att-file { display:inline-block; background:var(--card); border:1px solid var(--border); color:var(--accent); padding:8px 12px; border-radius:8px; text-decoration:none; font-size:0.86rem; }
+    footer { text-align:center; padding:24px; color:var(--muted); font-size:0.82rem; border-top:1px solid var(--border); }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="top-inner">
+      <div class="brand">
+        <img src="https://rekiemmc.github.io/Rekiem-Network/assets/rekiem_logo.png" class="brand-logo" alt="Logo"/>
+        <div>
+          <h1>Rekiem Network • #🔐-protocolo-3</h1>
+          <p>Transcript Oficial Ticket #7 • Reportes</p>
+        </div>
+      </div>
+      <input id="q" class="search-box" type="search" placeholder="🔎 Buscar en el chat..." oninput="filterMsgs(this.value)"/>
+    </div>
+  </header>
+  <section class="meta-bar">
+    <div class="meta-pill">Categoría<b>Reportes</b></div>
+    <div class="meta-pill">Abierto<b>24/11/2026 09:08 UTC</b></div>
+    <div class="meta-pill">Cerrado por<b>jesus_09gg</b></div>
+    <div class="meta-pill">Fecha cierre<b>24/11/2026 09:10 UTC</b></div>
+    <div class="meta-pill">Mensajes<b>4</b></div>
+  </section>
+  <main class="chat" id="chat">
+    
+                <div class="msg-row">
+                  <img class="avatar" src="https://cdn.discordapp.com/avatars/1548231435985490032/be9bc38ed48abc2dce9d0a739ec93c65.png?size=128" alt="avatar" loading="lazy"/>
+                  <div class="msg-body">
+                    <div class="msg-meta">
+                      <span class="author" style="color:#44869b">Rekiem Oficial</span>
+                      <span class="badge-bot">BOT</span>
+                      <span class="ts">24/11/2026 09:08 UTC</span>
+                    </div>
+                    <div class="msg-text">Buenas <span class="mention">@「ᴅᴄ-ᴀᴅᴍ」Jesus_rt</span> este es tu ticket, serás atendido por <span class="mention" style="color:rgb(139,137,255);background:rgba(139,137,255,0.16)">@🔷▸ MOD -DC</span> estará contigo</div>
+                    <div class="dc-embed" style="border-left-color:#00e5d1"><div class="emb-title">Ticket #7 • Reportes</div><div class="emb-desc">¡Hola <span class="mention">@「ᴅᴄ-ᴀᴅᴍ」Jesus_rt</span>! Gracias por contactar a <strong>Rekiem Network</strong>. <span class="mention" style="color:rgb(139,137,255);background:rgba(139,137,255,0.16)">@🔷▸ MOD -DC</span> te atenderá pronto.<br><br>❓ <strong><u>Preguntas:</u></strong><br><br><strong>Nick</strong><br>jesus<br><br><strong>Modalidad</strong><br>earth<br><br><strong>Nick del usuario a reportar</strong><br>reportar jugador<br><br><strong>Motivo del reporte</strong><br>tp kiills</div><div class="emb-footer">Ticket #7 • Reportes</div></div>
+                    
+                  </div>
+                </div>
+                
+                <div class="msg-row">
+                  <img class="avatar" src="https://cdn.discordapp.com/avatars/1112971599906357330/5343fad98c3db855046f3cab30415b35.png?size=128" alt="avatar" loading="lazy"/>
+                  <div class="msg-body">
+                    <div class="msg-meta">
+                      <span class="author" style="color:#9b88fd">「ᴅᴄ-ᴀᴅᴍ」Jesus_rt</span>
+                      
+                      <span class="ts">24/11/2026 09:09 UTC</span>
+                    </div>
+                    <div class="msg-text">asdf</div>
+                    
+                    <div class="att-wrap"><a href="https://rekiemmc.github.io/Rekiem-Network/assets/0c2e7829/1_0.png" target="_blank" rel="noopener"><img class="att-img" src="https://rekiemmc.github.io/Rekiem-Network/assets/0c2e7829/1_0.png" alt="image.png" loading="lazy"/></a></div>
+                  </div>
+                </div>
+                
+                <div class="msg-row">
+                  <img class="avatar" src="https://cdn.discordapp.com/avatars/1548231435985490032/be9bc38ed48abc2dce9d0a739ec93c65.png?size=128" alt="avatar" loading="lazy"/>
+                  <div class="msg-body">
+                    <div class="msg-meta">
+                      <span class="author" style="color:#44869b">Rekiem Oficial</span>
+                      <span class="badge-bot">BOT</span>
+                      <span class="ts">24/11/2026 09:09 UTC</span>
+                    </div>
+                    
+                    <div class="dc-embed" style="border-left-color:#22c55e"><div class="emb-title"><img class="dc-emoji" src="https://cdn.discordapp.com/emojis/1548471690202316870.webp?size=48" alt=":ticket:" title=":ticket:"/> Ticket Renombrado</div><div class="emb-desc">El ticket ha sido renombrado a <code>🔐-protocolo-3</code> por <span class="mention">@「ᴅᴄ-ᴀᴅᴍ」Jesus_rt</span>.</div></div>
+                    
+                  </div>
+                </div>
+                
+                <div class="msg-row">
+                  <img class="avatar" src="https://cdn.discordapp.com/avatars/1548231435985490032/be9bc38ed48abc2dce9d0a739ec93c65.png?size=128" alt="avatar" loading="lazy"/>
+                  <div class="msg-body">
+                    <div class="msg-meta">
+                      <span class="author" style="color:#44869b">Rekiem Oficial</span>
+                      <span class="badge-bot">BOT</span>
+                      <span class="ts">24/11/2026 09:10 UTC</span>
+                    </div>
+                    
+                    <div class="dc-embed" style="border-left-color:#f59e0b"><div class="emb-title"><img class="dc-emoji" src="https://cdn.discordapp.com/emojis/1345145472167182407.gif?size=48" alt=":26103banned:" title=":26103banned:"/> Cerrando Ticket #7...</div><div class="emb-desc"><img class="dc-emoji" src="https://cdn.discordapp.com/emojis/1548471690202316870.webp?size=48" alt=":ticket:" title=":ticket:"/> Generando transcript y eliminando el canal en <strong>5 segundos</strong>...</div><div class="emb-footer">Rekiem Network • Sistema Oficial</div></div>
+                    
+                  </div>
+                </div>
+                
+  </main>
+  <footer>Transcript permanente generado por Rekiem Network</footer>
+  <script>
+    function filterMsgs(q) {
+      const term = q.toLowerCase().trim();
+      document.querySelectorAll('.msg-row').forEach(el => {
+        el.style.display = !term || el.textContent.toLowerCase().includes(term) ? 'flex' : 'none';
+      });
+    }
+  </script>
+</body>
+</html>
